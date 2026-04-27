@@ -1,0 +1,109 @@
+.support {
+
+  .support__title {
+    margin-top: 473px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 107%;
+    letter-spacing: .03em;
+    text-align: center;
+    color: #fff;
+  }
+
+  .support__subtitle {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    letter-spacing: .009em;
+    text-align: center;
+    color: #d1d1d1;
+    margin-top: 45px;
+    margin-inline: auto;
+    width: 994px;
+  }
+
+  .support__items {
+    display: grid;
+    list-style-type: none;
+    padding-left: 0;
+    gap: 15px;
+    margin-top: 80px;
+    grid-template-columns: 4fr 5fr;
+    grid-template-rows: minmax(211px, 668px);
+
+    .support__item {
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 30px;
+      padding: 50px;
+
+      &:first-of-type {
+        column-gap: 44px;
+        grid-column: 1/3;
+        order: 0;
+      }
+      &:nth-child(2) {
+        order: 0;
+      }
+      &:nth-child(3) {
+        order: 0;
+      }
+      &:nth-child(4) {
+        order: 1;
+      }
+      &:nth-child(5) {
+        order: 0;
+      }
+      &:nth-child(6) {
+        order: 1;
+      }
+      &:nth-child(7) {
+        order: 1;
+      }
+
+      .number {
+        font-family: var(--font-family);
+        font-weight: 900;
+        font-size: 96px;
+        line-height: 81%;
+        letter-spacing: .06em;
+        color: #fff;
+
+        &.left {
+
+        }
+        &.top {
+
+        }
+      }
+
+
+      .item-title {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 100%;
+        letter-spacing: 0.03em;
+        color: #fff;
+      }
+
+      .item-subtitle {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: .005em;
+        color: #d1d1d1;
+        margin-top: 14px;
+        width: 80%;
+      }
+
+      img {
+        width: 709px;
+        height: 343px;
+        margin-top: 52px;
+      }
+    }
+  }
+}

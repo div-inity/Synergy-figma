@@ -1,0 +1,19 @@
+header {
+  justify-content: space-between;
+
+  .header__nav {
+    height: 50px;
+    margin-top: 15px;
+    column-gap: 74px;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    button {
+      width: 247px;
+      font-size: 1rem;
+    }
+  }
+}

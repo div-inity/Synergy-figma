@@ -1,0 +1,161 @@
+@import "_header.scss";
+@import "_hero.scss";
+@import "_support.scss";
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../../fonts/HelveticaNeue-Bold.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-VariableFont_opszwght.ttf") format("truetype");
+  font-display: swap;
+}
+
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "Helvetica Neue", sans-serif;
+  --accent: #9D42B9;
+}
+* {
+  box-sizing: border-box;
+  padding: 0; margin: 0;
+
+}
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-family);
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: rgba(0, 0, 0, 1);
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 112px;
+
+  header, section, footer {
+    width: 1223px;
+    margin: 0 auto;
+    padding-left: 8px;
+  }
+
+  .header__container {
+  }
+}
+.flex {
+  display: flex;
+
+  &.row {
+    flex-direction: row;
+  }
+
+  &.column {
+    flex-direction: column;
+  }
+}
+
+.hero-lines {
+  width: 100%;
+  height: 1092px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+
+  svg{
+    width: inherit;
+    height: inherit;
+  }
+}
+.back-gradient {
+  width: 100%;
+  height: 4082px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  svg{
+    width: inherit;
+    height: inherit;
+  }
+}
+
+.logo {
+  align-items: center;
+  height: 45px;
+  margin-top: 13px;
+  cursor: pointer;
+
+  .company-name {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 123%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    text-shadow: 0 -3px 30px #370059;
+    transition: text-shadow .3s;
+
+    &:hover {
+      text-shadow: 0 -3px 30px #6900aa;
+    }
+
+    .purple {
+      background: linear-gradient(180deg, #a145bd 0%, #370059 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .white {
+      color: white;
+    }
+  }
+
+  .company-subname {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 110%;
+    color: #d1d1d1;
+    line-height: 56%;
+  }
+}
+
+button {
+  background: linear-gradient(216deg, rgba(161, 69, 189, 1) 0%, rgba(55, 0, 89, 1) 100%);
+  font-family: var(--font-family);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow .3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 4px 103px 0 #fff;
+  }
+}
+
+a {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #fff;
+  text-decoration: none;
+  transition: color .3s ease-in-out;
+
+  &:hover {
+    color: var(--accent);
+  }
+}
