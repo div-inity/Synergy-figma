@@ -1,0 +1,88 @@
+.solutions {
+  background: #f6f6f9;
+
+  .solutions__container {
+    
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 112px;
+
+    .solutions__info {
+      width: 328px;
+      height: 311px;
+      
+      .speed {
+        width: 212px;
+      }
+
+      .info-name {
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: #000;
+      }
+
+      .info-description {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: #000;
+      }
+    }
+
+    .solutions__items {
+      flex-wrap: wrap;
+      column-gap: 20px;
+      justify-content: flex-end;
+
+      .item {
+        width: 392px;
+        img {
+
+        }
+
+        .item-title {
+          font-family: var(--second-family);
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 100%;
+          letter-spacing: -0.01em;
+          color: #000;
+        }
+
+        .item-description { 
+          font-family: var(--font-family);
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 100%;
+          letter-spacing: -0.01em;
+          color: #7c7c7c;
+        }
+
+        .item-name {
+          font-family: var(--second-family);
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 100%;
+          letter-spacing: -0.01em;
+          color: #000;
+        }
+
+        .item-price {
+          font-family: var(--font-family);
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 100%;
+          letter-spacing: -0.01em;
+          color: #7c7c7c;
+        }
+      }
+    }
+  }
+}

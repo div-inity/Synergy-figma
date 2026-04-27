@@ -9,6 +9,10 @@
     letter-spacing: .03em;
     text-align: center;
     color: #fff;
+
+    &:nth-of-type(2) {
+      margin-top: 220px;
+    }
   }
 
   .support__subtitle {
@@ -22,6 +26,10 @@
     margin-top: 45px;
     margin-inline: auto;
     width: 994px;
+
+    &:nth-of-type(2) {
+      margin-top: 37px;
+    }
   }
 
   .support__items {
@@ -30,52 +38,59 @@
     padding-left: 0;
     gap: 15px;
     margin-top: 80px;
-    grid-template-columns: 4fr 5fr;
-    grid-template-rows: minmax(211px, 668px);
+    grid-template-columns: 530px 668px;
+
+    .left, .right {
+      gap: 15px;
+    }
+
+    .left .support__item {
+      min-height: 352px;
+
+      &:nth-child(3) {
+        .number {
+          line-height: 118%;
+        }
+      }
+    }
+
+    .right .support__item {
+      min-height: 211px;
+
+      &:nth-child(2) {
+        padding-bottom: 80px;
+      }
+    }
 
     .support__item {
       background: rgba(0, 0, 0, 0.3);
       border-radius: 30px;
       padding: 50px;
 
-      &:first-of-type {
+      &:first-child {
         column-gap: 44px;
         grid-column: 1/3;
-        order: 0;
       }
-      &:nth-child(2) {
-        order: 0;
+
+      &.number_v {
+        row-gap: 35px;
       }
-      &:nth-child(3) {
-        order: 0;
+
+      &.number_h {
+        column-gap: 28px;
       }
-      &:nth-child(4) {
-        order: 1;
-      }
-      &:nth-child(5) {
-        order: 0;
-      }
-      &:nth-child(6) {
-        order: 1;
-      }
-      &:nth-child(7) {
-        order: 1;
+
+      .item-info {
+        row-gap: 15px;
       }
 
       .number {
         font-family: var(--font-family);
         font-weight: 900;
         font-size: 96px;
-        line-height: 81%;
+        line-height: 99%;
         letter-spacing: .06em;
         color: #fff;
-
-        &.left {
-
-        }
-        &.top {
-
-        }
       }
 
 
@@ -95,14 +110,13 @@
         line-height: 100%;
         letter-spacing: .005em;
         color: #d1d1d1;
-        margin-top: 14px;
-        width: 80%;
+        width: 94%;
       }
 
       img {
         width: 709px;
         height: 343px;
-        margin-top: 52px;
+        margin-top: 40px;
       }
     }
   }

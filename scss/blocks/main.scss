@@ -1,6 +1,7 @@
 @import "_header.scss";
 @import "_hero.scss";
 @import "_support.scss";
+@import "_solutions.scss";
 
 @font-face {
   font-family: "Helvetica Neue";
@@ -36,6 +37,7 @@ html {
 
 body {
   background: rgba(0, 0, 0, 1);
+  overflow-x: hidden;
 }
 
 .container {
@@ -65,7 +67,7 @@ body {
 }
 
 .hero-lines {
-  width: 100%;
+  width: 1920px;
   height: 1092px;
   position: absolute;
   top: 0;
@@ -77,11 +79,12 @@ body {
   }
 }
 .back-gradient {
-  width: 100%;
-  height: 4082px;
+  width: 1920px;
+  height: 2806px;
   position: absolute;
   z-index: -1;
-  top: 0;
+  top: 600px;
+
   svg{
     width: inherit;
     height: inherit;
@@ -158,4 +161,22 @@ a {
   &:hover {
     color: var(--accent);
   }
+}
+
+.image-block {
+  margin-top: 80px;
+  width: 100vw;
+  background-color: #122A4E;
+  .big-PC {
+    margin: 0 auto;
+    display: block;
+    width: 1440px;
+  }
+}
+
+
+.stroke {
+  color: transparent;
+  text-stroke: 1px white;
+  -webkit-text-stroke: 1px #fff;
 }
