@@ -48,7 +48,6 @@ body {
   header, section, footer {
     width: 1223px;
     margin: 0 auto;
-    padding-left: 8px;
   }
 
   .header__container {
@@ -89,6 +88,13 @@ body {
     width: inherit;
     height: inherit;
   }
+}
+.bottom-gradient {
+  width: 1920px;
+    height: 2552.98px;
+    position: absolute;
+    z-index: -1;
+    bottom: 2552.98px;
 }
 
 .logo {
@@ -166,7 +172,10 @@ a {
 .image-block {
   margin-top: 80px;
   width: 100vw;
-  background-color: #122A4E;
+  background-image: url(../../img/bigPC.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
   .big-PC {
     margin: 0 auto;
     display: block;

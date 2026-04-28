@@ -162,15 +162,20 @@ header .header__nav button {
 
 .solutions {
   background: #f6f6f9;
+  padding-top: 75px;
+  padding-bottom: 131px;
 }
 .solutions .solutions__container {
   width: 1440px;
   margin: 0 auto;
   padding: 0 112px;
+  justify-content: space-between;
 }
 .solutions .solutions__container .solutions__info {
   width: 328px;
   height: 311px;
+  align-items: center;
+  margin-top: 190px;
 }
 .solutions .solutions__container .solutions__info .speed {
   width: 212px;
@@ -183,26 +188,44 @@ header .header__nav button {
   letter-spacing: -0.01em;
   text-align: center;
   color: #000;
+  margin-top: -45px;
 }
 .solutions .solutions__container .solutions__info .info-description {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: -0.01em;
   text-align: center;
   color: #000;
+  margin-top: 13px;
 }
 .solutions .solutions__container .solutions__items {
   flex-wrap: wrap;
   -moz-column-gap: 20px;
        column-gap: 20px;
+  row-gap: 30px;
   justify-content: flex-end;
+  max-width: 804px;
 }
 .solutions .solutions__container .solutions__items .item {
   width: 392px;
+  row-gap: 28px;
 }
-.solutions .solutions__container .solutions__items .item .item-title {
+.solutions .solutions__container .solutions__items .item:nth-of-type(1) .item-info .item-title, .solutions .solutions__container .solutions__items .item:nth-of-type(1) .item-info .item-name {
+  -webkit-text-stroke: 1px #000;
+  color: white;
+}
+.solutions .solutions__container .solutions__items .item:nth-of-type(4) {
+  justify-content: space-between;
+}
+.solutions .solutions__container .solutions__items .item:nth-of-type(4) .item-info {
+  display: flex;
+  flex-direction: column;
+}
+.solutions .solutions__container .solutions__items .item .item-info {
+  padding-left: 20px;
+}
+.solutions .solutions__container .solutions__items .item .item-info .item-title {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 32px;
@@ -210,29 +233,32 @@ header .header__nav button {
   letter-spacing: -0.01em;
   color: #000;
 }
-.solutions .solutions__container .solutions__items .item .item-description {
+.solutions .solutions__container .solutions__items .item .item-info .item-description {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: -0.01em;
   color: #7c7c7c;
+  margin-top: 5px;
 }
-.solutions .solutions__container .solutions__items .item .item-name {
+.solutions .solutions__container .solutions__items .item .item-info .item-name {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 20px;
   line-height: 100%;
   letter-spacing: -0.01em;
   color: #000;
+  margin-top: 11px;
 }
-.solutions .solutions__container .solutions__items .item .item-price {
+.solutions .solutions__container .solutions__items .item .item-info .item-price {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 24px;
   line-height: 100%;
   letter-spacing: -0.01em;
   color: #7c7c7c;
+  margin-top: 25px;
 }
 
 @font-face {
@@ -280,7 +306,6 @@ body {
 .container header, .container section, .container footer {
   width: 1223px;
   margin: 0 auto;
-  padding-left: 8px;
 }
 .flex {
   display: flex;
@@ -314,6 +339,14 @@ body {
 .back-gradient svg {
   width: inherit;
   height: inherit;
+}
+
+.bottom-gradient {
+  width: 1920px;
+  height: 2552.98px;
+  position: absolute;
+  z-index: -1;
+  bottom: 2552.98px;
 }
 
 .logo {
@@ -384,7 +417,9 @@ a:hover {
 .image-block {
   margin-top: 80px;
   width: 100vw;
-  background-color: #122A4E;
+  background-image: url(../../img/bigPC.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .image-block .big-PC {
   margin: 0 auto;
