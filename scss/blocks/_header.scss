@@ -1,19 +1,37 @@
 header {
-  justify-content: space-between;
+  .container{
+    .header__block {
+      padding-top: 13px;
+      width: 100%;
+      margin-inline: auto;
+      .logo {
+        .company-name {
+          margin-top: 9px;
+        }
+      }
+      .header__nav {
+        height: 50px;
+        column-gap: 74px;
 
-  .header__nav {
-    height: 50px;
-    margin-top: 15px;
-    column-gap: 74px;
+        li {
+          height: 100%;
 
-    a {
-      display: inline-flex;
-      align-items: center;
-    }
+          a {
+            height: 100%;
+            display: inline-flex;
+            align-items: center;
+          }
+        }
 
-    button {
-      width: 247px;
-      font-size: 1rem;
+        
+
+        .button {
+          width: 247px;
+          font-size: 1rem;
+          height: 100%;
+        }
+      }
     }
   }
+  
 }

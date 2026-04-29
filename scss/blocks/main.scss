@@ -2,6 +2,7 @@
 @import "_hero.scss";
 @import "_support.scss";
 @import "_solutions.scss";
+@import "_order.scss";
 
 @font-face {
   font-family: "Helvetica Neue";
@@ -11,7 +12,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("../../fonts/Inter-VariableFont_opszwght.ttf") format("truetype");
+  src: url("../../fonts/Inter.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -21,7 +22,8 @@
   --accent: #9D42B9;
 }
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0; margin: 0;
 
 }
@@ -41,17 +43,13 @@ body {
 }
 
 .container {
-  width: 1440px;
+  width: 1213px;
   margin: 0 auto;
-  padding: 0 112px;
 
-  header, section, footer {
-    width: 1223px;
-    margin: 0 auto;
-  }
+}
 
-  .header__container {
-  }
+header, main, footer {
+  width: 100vw;
 }
 .flex {
   display: flex;
@@ -63,69 +61,31 @@ body {
   &.column {
     flex-direction: column;
   }
-}
-
-.hero-lines {
-  width: 1920px;
-  height: 1092px;
-  position: absolute;
-  top: 0;
-  z-index: -1;
-
-  svg{
-    width: inherit;
-    height: inherit;
+  &.center {
+    align-items: center;
+  }
+  &.between {
+    justify-content: space-between;
   }
 }
-.back-gradient {
-  width: 1920px;
-  height: 2806px;
-  position: absolute;
-  z-index: -1;
-  top: 600px;
 
-  svg{
-    width: inherit;
-    height: inherit;
-  }
-}
-.bottom-gradient {
-  width: 1920px;
-    height: 2552.98px;
-    position: absolute;
-    z-index: -1;
-    bottom: 2552.98px;
-}
-
-.logo {
+.logo a {
   align-items: center;
-  height: 45px;
-  margin-top: 13px;
+  height: inherit;
   cursor: pointer;
 
   .company-name {
     font-family: var(--font-family);
     font-weight: 900;
     font-size: 36px;
-    line-height: 123%;
-    letter-spacing: -0.01em;
-    text-align: center;
+    background: linear-gradient(180deg, #a145bd 0%, #370059 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-shadow: 0 -3px 30px #370059;
-    transition: text-shadow .3s;
-
-    &:hover {
-      text-shadow: 0 -3px 30px #6900aa;
-    }
-
-    .purple {
-      background: linear-gradient(180deg, #a145bd 0%, #370059 100%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
+    line-height: 76%;
     .white {
-      color: white;
+      -webkit-text-fill-color: white;
     }
   }
 
@@ -133,25 +93,35 @@ body {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
-    line-height: 110%;
     color: #d1d1d1;
-    line-height: 56%;
   }
 }
 
-button {
+.button {
+  display: inline-flex;
+  justify-content: center;
+  background: -o-linear-gradient(234deg, rgba(161, 69, 189, 1) 0%, rgba(55, 0, 89, 1) 100%);
   background: linear-gradient(216deg, rgba(161, 69, 189, 1) 0%, rgba(55, 0, 89, 1) 100%);
   font-family: var(--font-family);
   font-weight: 600;
-  letter-spacing: -0.01em;
+  /* letter-spacing: -0.01em; */
   color: #fff;
   border: none;
   cursor: pointer;
+  -webkit-transition: -webkit-box-shadow .3s ease-in-out;
+  transition: -webkit-box-shadow .3s ease-in-out;
+  -o-transition: box-shadow .3s ease-in-out;
   transition: box-shadow .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
 
   &:hover {
-    box-shadow: 0 4px 103px 0 #fff;
+    -webkit-box-shadow: 0 4px 103px 0 #fff;
+            box-shadow: 0 4px 103px 0 #fff;
   }
+}
+
+input {
+  border: none;
 }
 
 a {
@@ -162,30 +132,11 @@ a {
   letter-spacing: -0.01em;
   color: #fff;
   text-decoration: none;
+  -webkit-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
   transition: color .3s ease-in-out;
 
   &:hover {
     color: var(--accent);
   }
-}
-
-.image-block {
-  margin-top: 80px;
-  width: 100vw;
-  background-image: url(../../img/bigPC.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  .big-PC {
-    margin: 0 auto;
-    display: block;
-    width: 1440px;
-  }
-}
-
-
-.stroke {
-  color: transparent;
-  text-stroke: 1px white;
-  -webkit-text-stroke: 1px #fff;
 }

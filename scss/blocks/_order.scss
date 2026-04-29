@@ -1,0 +1,116 @@
+.order {
+  margin-top: 168px;
+  .order__title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 107%;
+    letter-spacing: .02em;
+    text-align: center;
+    color: #fff;
+  }
+  .order__form {
+    max-width: 683px;
+    margin-inline: auto;
+    margin-top: 91px;
+    row-gap: 20px;
+
+    .name, .tel, .email {
+      row-gap: 5px;
+      label {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: -0.01em;
+        color: #fff;
+      }
+      input {
+        border-radius: 20px;
+        width: 400px;
+        height: 50px;
+        background: rgba(0, 0, 0, 0.3);
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: -0.01em;
+        color: #d1d1d1;
+        padding-inline: 20px;
+      }
+    }
+    
+    .equipment {
+      border: none;
+      row-gap: 15px;
+
+      legend {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: -0.01em;
+        color: #fff;
+      }
+      .equipment__items {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 6px;
+        margin-top: 15px;
+        max-width: 625px;
+
+        .item {
+          align-items: flex-start;
+          column-gap: 13px;
+
+          input {
+            margin-top: 5px;
+          }
+          label {
+            background: #eaeaea;
+            border-radius: 20px;
+            padding: 15px 24px;
+            .item__info {
+              justify-content: center;
+
+              h3 {
+                font-family: var(--second-family);
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 100%;
+                letter-spacing: -0.01em;
+                color: #000;
+              }
+              p {
+                font-family: var(--second-family);
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 100%;
+                letter-spacing: -0.01em;
+                color: #767676;
+              }
+              img {
+
+              }
+            }
+          }
+        }
+      }
+    }
+    p {
+      font-family: var(--font-family);
+      font-weight: 200;
+      font-size: 18px;
+      line-height: 111%;
+      color: #fff;
+      margin-top: 10px;
+      letter-spacing: .075em;
+    }
+    button {
+      width: 247px;
+      height: 50px;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+}
