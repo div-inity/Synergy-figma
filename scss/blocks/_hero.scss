@@ -1,5 +1,13 @@
+.hero-lines {
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  svg {
+    width: inherit;
+  }
+}
 .hero {
-  margin-top: 87px !important;
+  margin-top: 130px;
   position: relative;
 
   .hero__info {
@@ -26,19 +34,18 @@
       letter-spacing: .03em;
     }
 
-    button {
+    .hero__button {
       font-size: 24px;
       width: 385px;
       height: 80px;
       margin-top: 118px;
+      display: inline-flex;
+      align-items: center;
     }
   }
   .hero__image {
-    height: 723px;
-    width: 723px;
-    object-fit: contain;
     position: absolute;
-    right: -87px;
-    top: -11px;
+    right: -89px;
+    top: -62px;
   }
 }

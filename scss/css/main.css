@@ -24,9 +24,21 @@ header .container .header__block .header__nav .button {
   font-size: 1rem;
   height: 100%;
 }
+header .container .header__block .header__nav .button:hover {
+  color: white;
+}
+
+.hero-lines {
+  position: absolute;
+  width: 100vw;
+  top: 0;
+}
+.hero-lines svg {
+  width: inherit;
+}
 
 .hero {
-  margin-top: 87px !important;
+  margin-top: 130px;
   position: relative;
 }
 .hero .hero__info {
@@ -51,20 +63,18 @@ header .container .header__block .header__nav .button {
   margin-top: 11px;
   letter-spacing: 0.03em;
 }
-.hero .hero__info button {
+.hero .hero__info .hero__button {
   font-size: 24px;
   width: 385px;
   height: 80px;
   margin-top: 118px;
+  display: inline-flex;
+  align-items: center;
 }
 .hero .hero__image {
-  height: 723px;
-  width: 723px;
-  -o-object-fit: contain;
-     object-fit: contain;
   position: absolute;
-  right: -87px;
-  top: -11px;
+  right: -89px;
+  top: -62px;
 }
 
 .support .support__title {
