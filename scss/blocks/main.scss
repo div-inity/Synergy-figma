@@ -45,7 +45,9 @@ body {
 .container {
   width: 1213px;
   margin: 0 auto;
-
+  &.media__container {
+    width: 1440px;
+  }
 }
 
 header, main, footer {
@@ -140,4 +142,8 @@ a {
   &:hover {
     color: var(--accent);
   }
+}
+
+.media {
+  height: 810px;
 }
