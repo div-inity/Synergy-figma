@@ -1,5 +1,6 @@
 .order {
   margin-top: 168px;
+  padding-bottom: 377px;
   .order__title {
     font-family: var(--second-family);
     font-weight: 700;
@@ -59,7 +60,7 @@
 
         .item {
           border-radius: 20px;
-          background: #413c3c;
+          background: #ffffff;
           width: 287px;
           padding: 16px 24px;
           position: relative;
@@ -103,8 +104,6 @@
               letter-spacing: 0px;
             }
           }
-
-          
 
           img {
             width: 81px;

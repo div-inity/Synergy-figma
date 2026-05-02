@@ -3,7 +3,7 @@ header {
   backdrop-filter: blur(26px);
   background: rgba(0, 0, 0, 0.6);
   top: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 header .container .header__block {
   padding-top: 13px;
@@ -312,6 +312,7 @@ header .container .header__block .header__nav li a.button {
 
 .order {
   margin-top: 168px;
+  padding-bottom: 377px;
 }
 .order .order__title {
   font-family: var(--second-family);
@@ -371,7 +372,7 @@ header .container .header__block .header__nav li a.button {
 }
 .order .order__form .equipment .equipment__items .item {
   border-radius: 20px;
-  background: #413c3c;
+  background: #ffffff;
   width: 287px;
   padding: 16px 24px;
   position: relative;
@@ -429,6 +430,25 @@ header .container .header__block .header__nav li a.button {
   height: 50px;
   font-size: 16px;
   margin-top: 10px;
+}
+
+footer {
+  padding-bottom: 64px;
+}
+footer .footer__block {
+  justify-content: space-between;
+}
+footer .footer__block address {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #fff;
+  font-style: normal;
+}
+footer .footer__block .logo {
+  margin-top: 12px;
 }
 
 @font-face {
@@ -559,4 +579,41 @@ a:hover {
 
 .media {
   height: 810px;
+}
+
+main {
+  position: relative;
+}
+
+.back1 {
+  position: absolute;
+  z-index: -1;
+  top: 470px;
+}
+
+.back2 {
+  position: absolute;
+  bottom: 145px;
+  z-index: -1;
+  width: 100%;
+}
+.back2 svg {
+  border-radius: 100%;
+  background: linear-gradient(180deg, rgba(0, 194, 255, 0.47) 0%, #ff29c3 100%);
+  filter: blur(294.4612426758px);
+  width: 65%;
+  height: auto;
+  opacity: 0.5;
+  margin: 0 auto;
+  display: block;
+}
+.back2 .blue {
+  filter: blur(294.4612426758px);
+  background: linear-gradient(180deg, rgba(24, 75, 255, 0) 0%, #174aff 100%);
+  transform: rotate(30deg);
+  width: 580px;
+  height: 823px;
+  position: absolute;
+  bottom: -100px;
+  right: 37%;
 }/*# sourceMappingURL=main.css.map */

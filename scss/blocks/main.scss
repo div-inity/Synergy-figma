@@ -3,6 +3,7 @@
 @import "_support.scss";
 @import "_solutions.scss";
 @import "_order.scss";
+@import "_footer.scss";
 
 @font-face {
   font-family: "Helvetica Neue";
@@ -146,4 +147,42 @@ a {
 
 .media {
   height: 810px;
+}
+
+
+main {
+  position: relative;
+}
+.back1 {
+  position: absolute;
+  z-index: -1;
+  top: 470px;
+}
+
+.back2 {
+  position: absolute;
+  bottom: 145px;
+  z-index: -1;
+  width: 100%;
+
+  svg {
+    border-radius: 100%;
+    background: linear-gradient(180deg, rgb(0 194 255 / 47%) 0%, #ff29c3 100%);
+    filter: blur(294.4612426758px);
+    width: 65%;
+    height: auto;
+    opacity: 0.5;
+    margin: 0 auto;
+    display: block;
+  }
+  .blue {
+    filter: blur(294.4612426758px);
+    background: linear-gradient(180deg, rgba(24, 75, 255, 0) 0%, #174aff 100%);
+    transform: rotate(30deg);
+    width: 580px;
+    height: 823px;
+    position: absolute;
+    bottom: -100px;
+    right: 37%;
+  }
 }
