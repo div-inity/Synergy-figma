@@ -212,6 +212,64 @@
             </div>
           </div>
         </section>
+
+        <section class="order">
+          <div class="container">
+            <h2 class="order__title">Предварительный заказ</h2>
+            <form action="" class="order__form flex column">
+              <div class="name flex column">
+                <label for="name">Ваше имя</label><input type="text" placeholder="Михаил" name="name">
+              </div>
+              <div class="tel flex column">
+                <label for="tel">Телефон</label><input type="text" placeholder="+79999999999" name="tel">
+              </div>
+              <div class="email flex column">
+                <label for="email">Почта</label><input type="text" placeholder="mail@gmail.com" name="email">
+              </div>
+
+              <fieldset class="equipment">
+                <legend>Комплектация</legend>
+                <div class="equipment__items flex row">
+                  <div class="item flex row">
+                    <input type="radio" id="item1"><label for="item1"></label>
+                    <div class="item__info flex column">
+                      <h3 class="item__title">Optima</h3>
+                      <p class="item__name">Intel Core i7 + 3060Ti</p>
+                    </div>
+                    <img src="img/green_small.svg" alt="Зеленый ПК">
+                  </div>
+                  <div class="item flex row">
+                    <input type="radio" id="item2"><label for="item2"></label>
+                    <div class="item__info flex column">
+                      <h3 class="item__title">Optima</h3>
+                      <p class="item__name">Intel Core i7 + 3060Ti</p>
+                    </div>
+                    <img src="img/green_small.svg" alt="Зеленый ПК">
+                  </div>
+                  <div class="item flex row">
+                    <input type="radio" id="item3"><label for="item3"></label>
+                    <div class="item__info flex column">
+                      <h3 class="item__title">Optima</h3>
+                      <p class="item__name">Intel Core i7 + 3060Ti</p>
+                    </div>
+                    <img src="img/green_small.svg" alt="Зеленый ПК">
+                  </div>
+                  <div class="item flex row">
+                    <input type="radio" id="item4"><label for="item4"></label>
+                    <div class="item__info flex column">
+                      <h3 class="item__title">Optima</h3>
+                      <p class="item__name">Intel Core i7 + 3060Ti</p>
+                    </div>
+                    <img src="img/green_small.svg" alt="Зеленый ПК">
+                  </div>
+                </div>
+              </fieldset>
+
+              <p>После оставления заявки с вами свяжется специалист и подберёт для вас компьютер</p>
+              <button class="button flex center">Отправить заявку</button>
+            </form>
+          </div>
+        </section>
         
       </main>
       <footer>
