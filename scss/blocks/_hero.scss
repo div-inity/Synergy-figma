@@ -8,19 +8,20 @@
   }
 }
 .hero {
-  margin-top: 203px;
+  font-size: 16px;
+  margin-top: 12.6875em;
 
   .hero__container {
     position: relative;
     
     .hero__info {
       width: 50%;
-      margin-top: 53px;
+      margin-top: 3.3125em;
 
       .hero__title {
         font-family: var(--second-family);
         font-weight: 700;
-        font-size: 80px;
+        font-size: 5em;
         line-height: 95%;
         letter-spacing: 0.08em;
         color: #fff;
@@ -29,19 +30,19 @@
       .hero__desc {
         font-family: var(--font-family);
         font-weight: 400;
-        font-size: 28px;
+        font-size: 0.6875em;
         line-height: 110%;
         color: #d1d1d1;
         text-shadow: 0 4px 14px 0 #000;
-        margin-top: 11px;
+        margin-top: 0.6875em;
         letter-spacing: .03em;
       }
 
       .hero__button {
-        font-size: 24px;
+        font-size: 1.5em;
         width: 385px;
         height: 80px;
-        margin-top: 118px;
+        margin-top: 7.375em;
         display: inline-flex;
         align-items: center;
       }
@@ -52,6 +53,43 @@
       top: -62px;
     }
   }
+}
 
-  
+@media screen and (max-width: 768px) {
+  .hero-lines {
+    width: 152vw;
+    top: -198px;
+    left: -51px;
+  }
+  .hero {
+    margin-top: 10em;
+
+    .hero__container {
+
+      .hero__info {
+        width: 96%;
+
+        .hero__title {
+          font-size: 64px;
+        }
+        .hero__desc {
+          font-size: 20px;
+          margin-top: 21px;
+          letter-spacing: .01em;
+        }
+        .hero__button {
+          font-size: 16px;
+          width: 247px;
+          height: 50px;
+          margin-top: 29px;
+        }
+      }
+      .hero__image {
+        width: 379px;
+        height: 379px;
+        right: -67px;
+        top: 264px;
+      }
+    }
+  }
 }

@@ -4,6 +4,7 @@ header {
   background: rgba(0, 0, 0, 0.6);
   top: 0;
   z-index: 1000;
+  font-size: 16px;
 
   .container{
     .header__block {
@@ -38,4 +39,14 @@ header {
       }
     }
   }
+}
+
+@media screen and (max-width: 768px) {
+  header .container {
+    padding-inline: 26px;
+    
+    .header__block .header__nav li a:not(a.button) {
+      display: none;
+    }
+  } 
 }
